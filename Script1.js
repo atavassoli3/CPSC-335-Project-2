@@ -124,3 +124,30 @@ function partition(arr, left, right) {
     return i
 
 }
+
+
+
+function poresort(a) {
+  
+    var n = (a.length-1)/2;
+    var x = a;
+   
+      //checks even (0,2,4,6...)
+        for (var i = 0; i < n; i+=2) {
+            if (x[i] < x[i + 1]) {
+                var temp = x[i];
+                x[i] = x[i + 1];
+                x[i + 1] = temp;
+            }
+
+        //checks odd (1,3,5,7...)
+        for (var i = 1; i < n; i+=2) {
+            if (x[i] < x[i + 1]) {
+                var temp = x[i];
+                x[i] = x[i + 1];
+                x[i + 1] = temp;
+            }
+        }
+   
+    return x;
+}
