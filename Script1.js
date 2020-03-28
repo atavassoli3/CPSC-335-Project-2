@@ -1,6 +1,6 @@
 
 
-
+var mergeHolder = [];
 var arr = ['0', 5, 'A', 6, 2, 7, 'B', 2, 'B' , 6, 0, 3];
 //QuickSort(arr);
 //mergeSort(arr);
@@ -48,7 +48,14 @@ function merge (arr, l, m, r) {
 
     
     console.log("\nL array is now \n", L.toString());
+    mergeHolder.push(L.toString());
     console.log("\nR array is now \n", R.toString());
+    mergeHolder.push(R.toString());
+
+    console.log("\nPrinting Holder");
+
+    console.log(mergeHolder);
+
     i = 0; // Initial index of first subarray 
     j = 0; // Initial index of second subarray 
     k = l; // Initial index of merged subarray 
@@ -112,7 +119,8 @@ function mergeSort(arr, l, r)
 } 
 
 
-mergeSort(arr, 0, arr.length);
+mergeSort(arr, 0, arr.length-1);
+
 
 console.log("Array after sort " , arr.toString());
 
