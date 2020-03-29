@@ -6,6 +6,8 @@ var mergeHolder = [];
 
 function setup() {
     createCanvas(800, 800);
+    y = 200;
+    m = 0;
 }
 
 function draw() {
@@ -13,6 +15,18 @@ function draw() {
     text("GOLD PORESORT", 100, 100);
     text("MERGESORT", 340, 100);
     text("QUICKSORT", 540, 100);
+
+ 
+    text(mergeHolder[m], 340, y)
+
+   
+
+    if (m != mergeHolder.length) {
+        m = m + 1;
+        y = y + 1;
+    }
+    
+
 }
 
 
@@ -191,3 +205,13 @@ function mergeSort(arr, l = 0, r = arr.length - 1) {
 } 
 
 
+function printHolders() {
+
+    var q = quickHolder.length;
+    var g = goldHolder.length;
+    var m = mergeHolder.length;
+
+
+
+
+}
