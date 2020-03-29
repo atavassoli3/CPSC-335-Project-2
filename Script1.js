@@ -1,4 +1,7 @@
-
+//Script1.js; Sorting Algorithms; P5 key animation functions. 
+//Group: Bungalow
+//Members: Thomas Smith (thqmas@csu.fullerton.edu), Vincent DeAugustine (vinnied44@csu.fullerton.edu), Matthew Quinlan (mdquinlan@csu.fullerton.edu)
+// Credit to GeeksForGeeks.org for providing a reference for merge sort and quick sort algorithms 
 
 var goldHolder = [];
 var quickHolder = [];
