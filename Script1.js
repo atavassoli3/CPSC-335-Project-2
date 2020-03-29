@@ -6,6 +6,7 @@ var mergeHolder = [];
 
 function setup() {
     createCanvas(800, 800);
+    frameRate(1);
     y = 200;
     m = 0;
 }
@@ -16,16 +17,19 @@ function draw() {
     text("MERGESORT", 340, 100);
     text("QUICKSORT", 540, 100);
 
- 
-    text(mergeHolder[m], 340, y)
 
+    for (var x = 0; x < m; x++) { 
+    text(mergeHolder[x], 340, 150 + (x*20))
+}
    
 
-    if (m != mergeHolder.length) {
-        m = m + 1;
-        y = y + 1;
+    if (m < mergeHolder.length) {
+        m++;
+        y = y + 30;
     }
-    
+  
+
+ 
 
 }
 
