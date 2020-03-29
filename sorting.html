@@ -9,6 +9,7 @@
 
 </head>
 <body>
+    <script src="Script1.js"></script>
     <script>
 
 
@@ -41,14 +42,25 @@
             ln4, ln5, ln6, ln7,
             ln8, ln9, ln10, ln11,
             ln12, ln13, ln14, ln15,
-            ln16, ln17, ln18, ln19
+            ln16, ln17, ln18, ln19,
             ln20, ln21, ln22, ln23,
             ln24];
 
         var rnd = Math.floor(Math.random() * 24);
 
-        var tester = lnList[rnd];
+        quickSort(lnList[rnd].split(''));
+        poresort(lnList[rnd].split(''));
+        mergeSort(lnList[rnd].split(''));
 
+
+        console.log(quickHolder);
+
+        console.log(goldHolder);
+        
+        console.log(mergeHolder);
+
+
+    
 
 
 
