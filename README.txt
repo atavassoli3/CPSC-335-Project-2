@@ -13,6 +13,7 @@ Script1.js -- The Javascript file containing the source code for this project, a
 sorting.html -- The HTML file for running program in a web browser. 
 style.css -- The CSS file for describing the presentation of the HTML file. 
 335-Project2-Sample.PNG -- The sample invocation of this program; a screenshot of the program running. 
+Analysis.PDF -- a 1-page paper describing our analysis of the running time of each algorithm as we have implemented it.
 
 External Requirements: NONE 
 
