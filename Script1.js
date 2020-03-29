@@ -5,29 +5,58 @@ var quickHolder = [];
 var mergeHolder = [];
 
 function setup() {
-    createCanvas(800, 800);
-    frameRate(1);
+    createCanvas(800, 1200);
+    frameRate(2);
     y = 200;
     m = 0;
+    q = 0;
+    g = 0;
 }
 
 function draw() {
-    background(226);
-    text("GOLD PORESORT", 100, 100);
-    text("MERGESORT", 340, 100);
-    text("QUICKSORT", 540, 100);
+    background(173, 216, 230);
+    textSize(16);
+    text("TEAM BUNGALOW - Thomas Smith - Vincent DeAugustine - Matthew Quinlan", 50, 50);
+    textSize(12);
+   
+    text("GOLD PORESORT", 90, 120);
+    text("MERGESORT", 320, 120);
+    text("QUICKSORT", 540, 120);
 
 
     for (var x = 0; x < m; x++) { 
-    text(mergeHolder[x], 340, 150 + (x*20))
+
+       
+    text(mergeHolder[x], 300, 150 + (x*20))
+
 }
    
-
     if (m < mergeHolder.length) {
         m++;
         y = y + 30;
     }
-  
+
+
+
+    for (var x = 0; x < q; x++) {
+        text(quickHolder[x], 520, 150 + (x * 20))
+    }
+
+    if (q < quickHolder.length) {
+        q++;
+        y = y + 30;
+    }
+
+
+    for (var x = 0; x < g; x++) {
+        text(goldHolder[x], 80, 150 + (x * 20))
+    }
+
+    if (g < goldHolder.length) {
+        g++;
+        y = y + 30;
+    }
+
 
  
 
