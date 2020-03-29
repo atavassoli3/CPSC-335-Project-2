@@ -1,0 +1,15 @@
+﻿/* CSS file for HTMLPage1.html
+Group: Bungalow
+Members: Thomas Smith (thqmas@csu.fullerton.edu), Vincent DeAugustine (vinnied44@csu.fullerton.edu), Matthew Quinlan (mdquinlan@csu.fullerton.edu)
+*/
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: sans-serif;
+}
+canvas {
+    background-color: black;
+}
